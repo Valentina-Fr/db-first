@@ -1,0 +1,20 @@
+Modellizzare la struttura di una tabella per memorizzare tutti i dati
+riguardanti delle auto usate messe in vendita da un concessionario.
+Scrivete la struttura della tabella "auto" con le varie proprietà, 
+tipi di dato e attributi in un file .txt e pushatelo sulla vostra repo. 
+Aiutatevi con le slides per scegliere le giuste caratteristiche.
+
+Entità auto
+
+id INT PRIMARY KEY (NOT NULL, UNIQUE, AUTO_INCREMENT)
+marca VARCHAR(20) NOT NULL
+modello VARCHAR(20) NOT NULL
+anno YEAR NOT NULL
+tipo CHAR(3) NOT NULL
+chilometri MEDIUMINT NOT NULL DEFAULT(0)
+alimentazione CHAR(3) NULL
+posti TINYINT NULL
+porte TINYINT NULL
+colore VARCHAR(10) NULL
+dotazione VARCHAR NULL
+costo FLOAT(9,2) NOT NULL
